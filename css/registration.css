@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+}
+.contained {
+    display: flex;
+}
+
+.containeds {
+    width: 30%;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Set height to fill the viewport */
+}
+
+.intro {
+    width: 50%; /* Adjust width as needed */
+    margin: 20px; 
+    text-align: center; /* Center text */
+    margin-left: 0;
+}
+
+.container {
+    flex: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 80%; /* Adjust width as needed */
+    background-color: #BCBABA;
+    padding: 20px; /* Add padding */
+    margin: 0;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    border-radius: 10px;
+    width: 100%; /* Adjust width as needed */
+    background-color: #BCBABA;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.social,
+.google {
+    width: 20%;
+    border: 2px solid #000000;
+    padding: 5px; /* Add padding */
+    border-radius: 10px;
+}
+
+.google {
+    margin-left: auto; /* Push Google box to the right */
+}
+
+.social p,
+.google p {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 5px;
+    padding: 0;
+}
+
+  button {
+    margin-top: 20px;
+    padding: 10px 100px;
+    background-color: #BCBABA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #000000;
+  }
+  .container button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+}
+.toggle-password {
+    position: absolute;
+    right: -350px; /* Adjust to place the icon on the right */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    cursor: pointer; /* Add cursor pointer for interaction */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formClass {
+    text-align: center;
+}
+/* Responsive Styling (Optional) */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
+.containee {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8c8a8a;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}

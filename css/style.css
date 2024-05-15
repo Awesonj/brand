@@ -1,0 +1,250 @@
+body{
+    padding: top 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+#staffIdInput {
+    width: 400px; /* Adjust the width as needed */
+    height: 10px;
+    padding: 10px; /* Adjust the padding as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: 2px solid #000000; /* Add border style */
+    margin-right: 0; /* Remove margin between elements */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-right: 0;
+}
+
+#searchs {
+    width: 300px; /* Adjust the width as needed */
+    height: 10px;
+    padding: 10px; /* Adjust the padding as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: 2px solid #000000; /* Add border style */
+    margin-right: 0; /* Remove margin between elements */
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-right: 0;
+}
+
+#categorySelect {
+    width: 100px; /* Adjust the width as needed */
+    height: 34px; /* Adjust the height as needed */
+    font-size: 15px; /* Adjust the font size as needed */
+    padding: 5px; /* Adjust the padding as needed */
+    border: 2px solid #000000; /* Add border style */
+    margin-left: 0; /* Remove margin between elements */
+    border-left: 0;
+    border-radius: 0px;
+}
+
+#category{
+    width: 340px; /* Adjust the width as needed */
+    height: 34px; /* Adjust the height as needed */
+    font-size: 15px; /* Adjust the font size as needed */
+    padding: 5px; /* Adjust the padding as needed */
+    border: 2px solid #000000; /* Add border style */
+    background-color: aquamarine;
+    margin-left: 5px; /* Remove margin between elements */
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 20px; /* Added margin bottom to create space for the sidebar */
+}
+
+.footer-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.search-icon-box {
+    background-color: #000; /* Black background */
+    width: 30px; /* Adjust width as needed */
+    height: 34px; /* Adjust height to match input/select height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-icon-box i {
+    color: #fff; /* White font color */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+img {
+    width: auto;
+    height: 800px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1{
+    background-color: aquamarine;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+
+.container {
+    width: calc((92% - 20px) / 5); /* Calculate width with padding and margin */
+    height: 460px; /* Adjust the height as needed */
+    border: 2px solid black; /* Optional: Add border for visibility */
+    margin-right: 20px; /* Space between containers */
+    margin-bottom: 20px; /* Space below containers */
+    display: inline-block; /* Make containers display inline */
+    box-sizing: border-box; /* Include border in width calculation */
+    vertical-align: top; /* Align containers to the top */
+    box-shadow: 0px 1px 4px rgba(47, 47, 47, 0.837);
+    position: relative; /* Ensure the container is positioned relative */
+    
+}
+
+
+.container img {
+    width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: 300px; /* Make sure the image doesn't exceed the container height */
+    display: block; /* Ensure the image is centered within the container */
+    margin: auto; /* Center the image horizontally */
+    padding: 0;
+}
+
+.containers {
+    width: calc((94% - 20px) / 4); /* Calculate width with padding and margin */
+    height:auto;
+    border: 1px solid black; /* Optional: Add border for visibility */
+    margin-right: 20px; /* Space between containers */
+    margin-bottom: 20px; /* Space below containers */
+    display: inline-block; /* Make containers display inline */
+    box-sizing: border-box; /* Include border in width calculation */
+    vertical-align: top; /* Align containers to the top */
+    text-align: center;
+}
+
+.containee{
+    background-color: rgb(0, 0, 0);
+    color: aquamarine;
+}
+
+.containees {
+    width: calc((96% - 20px) / 3); /* Calculate width with padding and margin */
+    height:auto;
+    border: 1px solid black; /* Optional: Add border for visibility */
+    margin-right: 20px; /* Space between containers */
+    margin-bottom: 20px; /* Space below containers */
+    display: inline-block; /* Make containers display inline */
+    box-sizing: border-box; /* Include border in width calculation */
+    vertical-align: top; /* Align containers to the top */
+    text-align: center;
+}
+
+.sidebar {
+    width: 350px; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);;
+    padding-top: 10px;
+    position: fixed; /* Set the sidebar position to fixed */
+    bottom: 0; /* Extend the sidebar to the bottom of the viewport */
+    position: relative;
+    top: 0px; 
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Adjust spacing between icons */
+}
+
+.footer-icons .fas {
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.footer-icons span {
+    margin-top: 5px; /* Adjust spacing between icon and text */
+}
+
+
+
+.container button {
+    position: absolute; /* Position the button absolutely */
+    bottom: 0; /* Align the button to the bottom */
+    width: 100%;
+    height: 35px;
+    transition: background-color 0.3s ease; /* Add transition effect */
+   background-color: aquamarine;
+   border-left: 0;
+   border-right: 0;
+   border-bottom: 0;
+   box-shadow: 0px 1px 4px rgba(47, 47, 47, 0.837);
+}
+
+.container button:hover {
+    background-color: lightblue; /* Change background color on hover */
+}
+.price {
+    color: #cd1212; /* Adjust color as needed */
+    font-size: 28px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-top: 5px; /* Add margin between item name and price */
+}
+.item-info {
+    margin-bottom: 5px; /* Add margin between item name and price */
+}
+
+
+.item-info select {
+    margin-left: 10px;
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 7px; /* Adjust the padding as needed */
+    margin-bottom: 5px;
+}
+
+.item-info input[type="text"] {
+    padding: 5px; /* Add padding for better appearance */   
+    width: 22px;
+    height: 22px;
+    border: 2px solid black; /* Add border */
+    border-right: 0;
+    border-left: 0;
+    text-align: center; /* Center the text inside the input */
+    -moz-appearance: textfield; /* Remove the up and down arrows in Firefox */
+    appearance: textfield; /* Remove the up and down arrows in other browsers */
+}
+
+.quantity-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+.quantity-controls {
+    display: flex; /* Use flexbox for the controls */
+    align-items: center; /* Align items vertically */
+    padding-left: 55px;
+}
+
+.quantity-controls i {
+    margin-right: 0px; /* Adjust the margin to bring icons closer */
+    cursor: pointer;
+    border: 2px solid black; /* Add border */
+    padding: 8px; /* Add padding for better appearance */
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="contained">
+        <div class="containeds">
+            <div class="intro">
+                <p>Have you been looking for where to get the most trending outfits? look no futher <br><img src="../images/Untitled-2-removebg-preview.png" alt="logo"> <h1>Break Point</h1></p>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Create your Account</h1>
+            <div class="signup"> 
+                <div class="social">
+                    <p>sign-In with social</p>
+                </div>
+                <div class="google">
+                    <p>sign-In with google</p>
+                </div>
+            </div>
+            <h1>Or</h1>
+            <section class="formClass">
+                <div class="containee">
+                    <form id="loginForm">
+                        <div class="input-container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="username" placeholder="Username or Email" required>
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" placeholder="Password" required>
+                            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+                        </div>
+                        <button type="submit">Login</button>
+                        <p>Not registered yet? <a href="registartion.html" id="registerLink">Sign Up</a></p>
+                    </form>
+                </div>
+            </section>
+        
+        </div>
+    </div>
+
+<script src="../js/login.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js" type="module"></script>
+</body>
+</html>
