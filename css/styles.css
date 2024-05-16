@@ -100,10 +100,6 @@ a{
     font-size: 18px; /* Adjust font size as needed */
 }
 
-img {
-    width: auto;
-    height: 180px;
-}
 
 h1{
     background-color: aquamarine;
@@ -117,34 +113,27 @@ h2 {
 
 .container {
     width: calc((100% - 100px) / 4); /* Calculate width with padding and margin */
-    height: 300px; /* Adjust the height as needed */
+    height: 433px; /* Adjust the height as needed */
     border: 1px solid black; /* Optional: Add border for visibility */
     margin-right: 20px; /* Space between containers */
     margin-bottom: 20px; /* Space below containers */
     display: inline-block; /* Make containers display inline */
     box-sizing: border-box; /* Include border in width calculation */
     vertical-align: top; /* Align containers to the top */
+    box-shadow: 0px 1px 4px rgba(47, 47, 47, 0.837);
+    position: relative; /* Ensure the container is positioned relative */
+    
 }
 
 
 .container img {
-    max-width: 100%; /* Make sure the image doesn't exceed the container width */
-    max-height: 100%; /* Make sure the image doesn't exceed the container height */
+    width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: 280px; /* Make sure the image doesn't exceed the container height */
     display: block; /* Ensure the image is centered within the container */
     margin: auto; /* Center the image horizontally */
+    padding: 0;
 }
 
-.containers {
-    width: calc((70% - 20px) / 4); /* Calculate width with padding and margin */
-    height:auto;
-    border: 1px solid black; /* Optional: Add border for visibility */
-    margin-right: 20px; /* Space between containers */
-    margin-bottom: 20px; /* Space below containers */
-    display: inline-block; /* Make containers display inline */
-    box-sizing: border-box; /* Include border in width calculation */
-    vertical-align: top; /* Align containers to the top */
-    text-align: center;
-}
 
 .containee{
     background-color: rgb(0, 0, 0);
@@ -186,11 +175,68 @@ h2 {
     padding-top: 10px;
 }
 
-.t-shirts {
-    flex: 1; /* The t-shirts section will take up remaining space */
-    padding-left: 20px; /* Add some space between the sidebar and t-shirts */
+.container button {
+    position: absolute; /* Position the button absolutely */
+    bottom: 0; /* Align the button to the bottom */
+    width: 100%;
+    height: 35px;
+    transition: background-color 0.3s ease; /* Add transition effect */
+   background-color: aquamarine;
+   border-left: 0;
+   border-right: 0;
+   border-bottom: 0;
+   box-shadow: 0px 1px 4px rgba(47, 47, 47, 0.837);
 }
 
-/* Adjust other styles as needed */
+.container button:hover {
+    background-color: lightblue; /* Change background color on hover */
+}
+.price {
+    color: #cd1212; /* Adjust color as needed */
+    font-size: 28px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-top: 5px; /* Add margin between item name and price */
+}
+.item-info {
+    margin-bottom: 5px; /* Add margin between item name and price */
+}
+
+
+.item-info select {
+    margin-left: 10px;
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 7px; /* Adjust the padding as needed */
+    margin-bottom: 5px;
+}
+
+.item-info input[type="text"] {
+    padding: 5px; /* Add padding for better appearance */   
+    width: 22px;
+    height: 22px;
+    border: 2px solid black; /* Add border */
+    border-right: 0;
+    border-left: 0;
+    text-align: center; /* Center the text inside the input */
+    -moz-appearance: textfield; /* Remove the up and down arrows in Firefox */
+    appearance: textfield; /* Remove the up and down arrows in other browsers */
+}
+
+.quantity-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+.quantity-controls {
+    display: flex; /* Use flexbox for the controls */
+    align-items: center; /* Align items vertically */
+    padding-left: 40px;
+}
+
+.quantity-controls i {
+    margin-right: 0px; /* Adjust the margin to bring icons closer */
+    cursor: pointer;
+    border: 2px solid black; /* Add border */
+    padding: 8px; /* Add padding for better appearance */
+}
 
 
