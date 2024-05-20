@@ -1,7 +1,10 @@
+
+
 body{
-    padding: top 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
     
 }
 #staffIdInput {
@@ -51,6 +54,7 @@ body{
 }
 
 .search-container {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     padding-bottom: 10px;
@@ -62,7 +66,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-right: 20px;
 }
 
@@ -83,7 +87,7 @@ body{
 }
 
 img {
-    width: auto;
+    width: 100%;
     height: 800px;
 }
 a{
@@ -91,12 +95,15 @@ a{
     color: #000;
 }
 h1{
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
     text-align: center;
+    margin-top: 0;
+    color: white;
 }
 h2 {
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 
@@ -162,6 +169,7 @@ h2 {
     position: relative;
     top: 0px; 
   }
+
   .footer-icons {
     display: flex;
     align-items: center;
@@ -171,15 +179,17 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px; /* Adjust spacing between icons */
+    margin-right: 10px; 
 }
 
 .footer-icons .fas {
-    font-size: 24px; /* Adjust the size as needed */
+    margin-top: 27px;
+    font-size: 30px; /* Adjust the size as needed */
 }
 
 .footer-icons span {
-    margin-top: 5px; /* Adjust spacing between icon and text */
+    margin-top: 10px; /* Adjust spacing between icon and text */
+    margin-right: 8px;
 }
 
 
@@ -248,3 +258,24 @@ h2 {
     padding: 8px; /* Add padding for better appearance */
 }
 
+.logo img{
+    width: 160px;
+    height: 80px;
+    flex-direction: column;
+    margin-right: 50px;
+    padding-left: 50px;
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+.address{
+    margin-top: 0;
+    color: white;
+    background-color: #000000;
+}
