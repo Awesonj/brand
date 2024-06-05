@@ -1,3 +1,4 @@
+
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js';
 import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js';
 
@@ -31,80 +32,60 @@ async function addProductToCart(productName, productImage, productPrice, product
     }
 }
 
-// Event listener for "Add to Cart" buttons
-document.querySelectorAll('#addToCart').forEach(button => {
-    button.addEventListener('click', function () {
-        // Get the container of the product
-        const container = button.closest('.container');
-        // Get product details
-        const productName = container.querySelector('.item-info > span:first-child').textContent;
-        const productImage = container.querySelector('img').src;
-        const productPrice = container.querySelector('.item-info > .price').textContent;
-        const productSize = container.querySelector('#size').value;
-        const productQuantity = container.querySelector('#quantity').value;
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all elements with the class "quantity-controls"
+    const quantityControls = document.querySelectorAll('.quantity-controls');
 
-        // Add product to Firestore cart
-        addProductToCart(productName, productImage, productPrice, productSize, productQuantity);
+    // Add event listeners to all plus and minus icons
+    quantityControls.forEach(control => {
+        const plusIcon = control.querySelector('.fa-plus');
+        const minusIcon = control.querySelector('.fa-minus');
+        const quantityInput = control.querySelector('#quantity');
+
+        // Increment quantity
+        plusIcon.addEventListener('click', () => {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        });
+
+        // Decrement quantity, but not below 1
+        minusIcon.addEventListener('click', () => {
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+
+        // Lock the input text
+        quantityInput.readOnly = true;
+    });
+
+    // Handle "Add to Cart" button clicks
+    const addToCartButtons = document.querySelectorAll('#addToCart');
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            // Find the closest container for this button
+            const container = event.target.closest('.container');
+
+            // Extract product information
+            const productName = container.querySelector('.item-info span').innerText;
+            const productImage = container.querySelector('img').src;
+            const productPrice = container.querySelector('.price').innerText;
+            const productSize = container.querySelector('#size').value;
+            const productQuantity = container.querySelector('#quantity').value;
+
+            // Make sure a size is selected
+            if (productSize === 'Size') {
+                alert('Please select a size.');
+                return;
+            }
+
+            // Add product to Firestore cart
+            addProductToCart(productName, productImage, productPrice, productSize, productQuantity);
+
+            // Show a confirmation message (optional)
+            alert(`${productQuantity} ${productName} (Size: ${productSize}) added to cart.`);
+        });
     });
 });
 
-// Plus icon event listener
-document.querySelector('.fa-plus').addEventListener('click', function() {
-    const input = document.getElementById('quantity');
-    input.value = parseInt(input.value) + 1;
-});
-
-// Minus icon event listener
-document.querySelector('.fa-minus').addEventListener('click', function() {
-    const input = document.getElementById('quantity');
-    if (parseInt(input.value) > 1) {
-        input.value = parseInt(input.value) - 1;
-    }
-});
-
-// Lock the input text
-document.getElementById('quantity').readOnly = true;
-
-
-
-
-// Function to search all pages of the website
-function searchAllPages(query) {
-    // Convert the query to lowercase for case-insensitive matching
-    query = query.toLowerCase();
-
-    // Get all containers
-    var containers = document.querySelectorAll('.container');
-
-    // Loop through each container
-    containers.forEach(function(container) {
-        // Check if the container has an image with alt attribute containing the query
-        var image = container.querySelector('img');
-        var altText = image.alt.toLowerCase();
-        
-        // Check if the query exists in the alt attribute of the image or in the span text content
-        var span = container.querySelector('span');
-        var spanText = span ? span.textContent.toLowerCase() : '';
-
-        // Check if the query exists in either the alt attribute or the span text content
-        if (altText.includes(query) || spanText.includes(query)) {
-            // If the query is found, display the container
-            container.style.display = 'block';
-        } else {
-            // If the query is not found, hide the container
-            container.style.display = 'none';
-        }
-    });
-}
-
-// Event listener for the main search button
-document.getElementById('searchButton').addEventListener('click', function() {
-    var query = document.getElementById('staffIdInput').value;
-    searchAllPages(query);
-});
-
-// Event listener for the sidebar search button
-document.getElementById('searchButtonSidebar').addEventListener('click', function() {
-    var query = document.getElementById('searchInput').value;
-    searchAllPages(query);
-});
