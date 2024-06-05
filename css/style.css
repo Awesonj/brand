@@ -1,83 +1,71 @@
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    nav {
-      flex-direction: column;
-    }
-
-body{
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 0;
-    
-}
-#staffIdInput {
-    width: 400px; /* Adjust the width as needed */
-    height: 10px;
-    padding: 10px; /* Adjust the padding as needed */
-    font-size: 16px; /* Adjust the font size as needed */
-    border: 2px solid #000000; /* Add border style */
-    margin-right: 0; /* Remove margin between elements */
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-right: 0;
+body {
+    padding: 0;
+    margin: 0;
 }
 
+#staffIdInput,
 #searchs {
-    width: 300px; /* Adjust the width as needed */
-    height: 10px;
-    padding: 10px; /* Adjust the padding as needed */
-    font-size: 16px; /* Adjust the font size as needed */
-    border: 2px solid #000000; /* Add border style */
-    margin-right: 0; /* Remove margin between elements */
+    width: 100%; /* Make width 100% for responsiveness */
+    max-width: 400px; /* Set max-width to ensure it doesn't grow too large */
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    margin-right: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding-right: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 #categorySelect {
-    width: 100px; /* Adjust the width as needed */
-    height: 34px; /* Adjust the height as needed */
-    font-size: 15px; /* Adjust the font size as needed */
-    padding: 5px; /* Adjust the padding as needed */
-    border: 2px solid #000000; /* Add border style */
-    margin-left: 0; /* Remove margin between elements */
+    width: 100%;
+    max-width: 100px; /* Set max-width to ensure it doesn't grow too large */
+    height: 34px;
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid #000000;
+    margin-left: 0;
     border-left: 0;
-    border-radius: 0px;
+    border-radius: 0;
+    box-sizing: border-box;
 }
 
-#category{
-    width: 340px; /* Adjust the width as needed */
-    height: 34px; /* Adjust the height as needed */
-    font-size: 15px; /* Adjust the font size as needed */
-    padding: 5px; /* Adjust the padding as needed */
-    border: 2px solid #000000; /* Add border style */
+#category {
+    width: 100%;
+    max-width: 340px; /* Set max-width to ensure it doesn't grow too large */
+    height: 34px;
+    font-size: 15px;
+    padding: 5px;
+    border: 2px solid #000000;
     background-color: aquamarine;
-    margin-left: 5px; /* Remove margin between elements */
+    margin-left: 5px;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .search-container {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items in flex container */
     align-items: center;
     padding-bottom: 10px;
-    position: relative;
-    margin-bottom: 20px; /* Added margin bottom to create space for the sidebar */
+    margin-bottom: 20px;
 }
 
 .footer-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 20px;
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 60px;
-    margin-right: 20px;
 }
 
 .search-icon-box {
-    background-color: #000; /* Black background */
-    width: 30px; /* Adjust width as needed */
-    height: 34px; /* Adjust height to match input/select height */
+    background-color: #000;
+    width: 30px;
+    height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,131 +74,116 @@ body{
 }
 
 .search-icon-box i {
-    color: #fff; /* White font color */
-    font-size: 18px; /* Adjust font size as needed */
+    color: #fff;
+    font-size: 18px;
 }
 
 img {
     width: 100%;
-    height: 800px;
+    height: auto; /* Maintain aspect ratio */
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
-h1{
+
+h1, h2 {
     background-color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 0;
     color: white;
 }
-h2 {
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-
 
 .container {
-    width: calc((92% - 20px) / 5); /* Calculate width with padding and margin */
-    height: 460px; /* Adjust the height as needed */
-    /* border: 2px solid black;  */
-    margin-right: 20px; /* Space between containers */
-    margin-bottom: 20px; /* Space below containers */
-    display: inline-block; /* Make containers display inline */
-    box-sizing: border-box; /* Include border in width calculation */
-    vertical-align: top; /* Align containers to the top */
+    width:calc((80% - 20px) / 5); /* Adjust to fit within container */
+    height: 460px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
     box-shadow: 0px 1px 4px rgba(47, 47, 47, 0.837);
-    position: relative; /* Ensure the container is positioned relative */
+    position: relative;
     border-radius: 15px;
-    
+    margin-left: 20px;
 }
 
-
 .container img {
-    width: 100%; /* Make sure the image doesn't exceed the container width */
-    height: 300px; /* Make sure the image doesn't exceed the container height */
-    display: block; /* Ensure the image is centered within the container */
-    margin: auto; /* Center the image horizontally */
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0;
     padding: 0;
     border-radius: 15px;
 }
 
 .containers {
-    width: calc((94% - 20px) / 4); /* Calculate width with padding and margin */
-    height:auto;
-    border: 1px solid black; /* Optional: Add border for visibility */
-    margin-right: 20px; /* Space between containers */
-    margin-bottom: 20px; /* Space below containers */
-    display: inline-block; /* Make containers display inline */
-    box-sizing: border-box; /* Include border in width calculation */
-    vertical-align: top; /* Align containers to the top */
+    width: calc(100% - 20px); /* Adjust to fit within container */
+    max-width: calc((80% - 20px) / 5); /* Set max-width to ensure responsiveness */
+    height: auto;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
     text-align: center;
     border-radius: 15px;
 }
 
-.containee{
+.containee {
     background-color: rgb(0, 0, 0);
     color: aquamarine;
 }
 
 .containees {
-    width: calc((96% - 20px) / 3); /* Calculate width with padding and margin */
-    height:auto;
-    margin-right: 20px; /* Space between containers */
-    margin-bottom: 20px; /* Space below containers */
-    display: inline-block; /* Make containers display inline */
-    box-sizing: border-box; /* Include border in width calculation */
-    vertical-align: top; /* Align containers to the top */
+    width:calc((96% - 20px) / 3 ); /* Adjust to fit within container */
+    height: auto;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
     text-align: center;
-
 }
 
 .sidebar {
-    width: 350px; 
+    width: 100%;
+    max-width: 350px;
     background-color: #ffffff;
-    color: rgb(0, 0, 0);;
+    color: rgb(0, 0, 0);
     padding-top: 10px;
-    position: fixed; /* Set the sidebar position to fixed */
-    bottom: 0; /* Extend the sidebar to the bottom of the viewport */
-    position: relative;
-    top: 0px; 
-  }
-
-  .footer-icons {
-    display: flex;
-    align-items: center;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    box-sizing: border-box;
 }
 
 .footer-icons div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .footer-icons .fas {
     margin-top: 27px;
-    font-size: 30px; /* Adjust the size as needed */
+    font-size: 30px;
 }
 
 .footer-icons span {
-    margin-top: 10px; /* Adjust spacing between icon and text */
+    margin-top: 10px;
     margin-right: 8px;
 }
 
-
-
 .container button {
-    position: absolute; /* Position the button absolutely */
-    bottom: 0; /* Align the button to the bottom */
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 35px;
-    transition: background-color 0.3s ease; /* Add transition effect */
+    transition: background-color 0.3s ease;
     background-color: rgb(0, 0, 0);
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+    border: none;
     color: #fff;
     box-shadow: 0px 1px 4px rgba(47, 47, 47, 0.837);
     border-bottom-left-radius: 15px;
@@ -218,62 +191,62 @@ h2 {
 }
 
 .container button:hover {
-    background-color: lightblue; /* Change background color on hover */
-}
-.price {
-    color: #cd1212; /* Adjust color as needed */
-    font-size: 28px; /* Adjust font size as needed */
-    font-weight: bold;
-    margin-top: 5px; /* Add margin between item name and price */
-}
-.item-info {
-    margin-bottom: 5px; /* Add margin between item name and price */
+    background-color: lightblue;
 }
 
+.price {
+    color: #cd1212;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.item-info {
+    margin-bottom: 5px;
+}
 
 .item-info select {
     margin-left: 20px;
-    font-size: 16px; /* Adjust the font size as needed */
-    padding: 8px; /* Adjust the padding as needed */
+    font-size: 16px;
+    padding: 8px;
     margin-bottom: 1px;
-    margin-right:1px;
+    margin-right: 1px;
 }
 
 .item-info input[type="text"] {
-    padding: 5px; /* Add padding for better appearance */   
+    padding: 5px;
     width: 22px;
     height: 22px;
-    border: 2px solid black; /* Add border */
+    border: 2px solid black;
     border-right: 0;
     border-left: 0;
-    text-align: center; /* Center the text inside the input */
-    -moz-appearance: textfield; /* Remove the up and down arrows in Firefox */
-    appearance: textfield; /* Remove the up and down arrows in other browsers */
+    text-align: center;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .quantity-container {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */   
+    display: flex;
+    align-items: center;
 }
 
 .quantity-controls {
-    display: flex; /* Use flexbox for the controls */
-    align-items: center; /* Align items vertically */
+    display: flex;
+    align-items: center;
     padding-left: 5px;
 }
 
 .quantity-controls i {
-    margin-right: 0px; /* Adjust the margin to bring icons closer */
+    margin-right: 0;
     margin-left: 0;
     cursor: pointer;
-    border: 2px solid black; /* Add border */
-    padding: 8px; /* Add padding for better appearance */
+    border: 2px solid black;
+    padding: 8px;
 }
 
-.logo img{
+.logo img {
     width: 160px;
     height: 80px;
-    flex-direction: column;
     margin-right: 50px;
     padding-left: 50px;
     margin-top: 0;
@@ -290,62 +263,65 @@ header {
 .flex-container {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Add some space from the previous elements */
+    margin-top: 10px;
+    margin: left 0;
 }
 
 .item-container {
     display: flex;
-    align-items: center; /* Center items vertically */
-    margin-bottom: 20px; /* Add space between items */
-    border-bottom:   2px solid rgb(255, 255, 255);
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .item-container img {
-    width: 100px; /* Adjust image width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add space between image and text */
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .item-container span {
-    flex-grow: 1; /* Allow the text to grow and fill available space */
-    font-size: 16px; /* Adjust font size as needed */
+    flex-grow: 1;
+    font-size: 16px;
 }
-.bp img{
+
+.bp img {
     width: 300px;
     height: auto;
 }
+
 nav {
     background-color: #ffffff;
     position: sticky;
     top: 0;
     z-index: 1000;
     padding-top: 1px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     text-align: center;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline;
     margin-right: 15px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
     color: #8b4513;
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease, border-bottom-color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     color: #8b4513;
     border-bottom: 2px solid #8b4513;
-  }
-  
-  nav ul li a::after {
+}
+
+nav ul li a::after {
     content: '';
     display: block;
     position: absolute;
@@ -355,25 +331,139 @@ nav {
     height: 2px;
     background-color: transparent;
     transition: background-color 0.3s ease;
-  }
-  
-  nav ul li a:hover::after,
-  nav ul li a.active::after {
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
     background-color: #8b4513;
-  }
+}
 
-  .containees h2{
+.containees h2 {
     color: #8b4513;
-  }
-  
-  .social-icon {
-    color: white;
-    font-size: 24px; /* Adjust the font size as needed */
-    margin: 10px 0;  /* Add margin for spacing between icons */
-    transition: color 0.3s ease; /* Add transition for hover effect */
 }
 
-.social-icon:hover {
-    color: #f0f0f0; /* Slightly different shade on hover for effect */
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
 }
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 1200px) {
+    .flex-container {
+        flex-wrap: wrap; /* Allow containers to wrap to the next line */
+    }
+    .container,
+    .containers{
+        width: calc((85% - 15px)/2); /* Adjust width for smaller screens */
+        margin-right: 20px; /* Add right margin to create spacing between items */
+        margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+    }
+}
+
+/* Adjustments for larger screens */
+@media only screen and (min-width: 762px) {
+    .flex-container {
+        flex-wrap: nowrap; /* Prevent containers from wrapping */
+    }
+    .container,
+    .containers{
+        width: calc((85%  - 20px) / 5); /* Adjust width for larger screens */
+        margin-right: 20px; /* Add right margin to create spacing between items */
+    }
+    /* Adjust margin for the last item in the row */
+    .container:nth-child(5n),
+    .containers:nth-child(5n){
+        margin-right: 0;
+    }
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 762px) {
+    header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .logo img {
+        width: 120px; /* Adjust logo size for smaller screens */
+        height: 60px; /* Adjust logo size for smaller screens */
+        margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+    }
+
+}
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 762px) {
+    .footer-icons {
+        flex-direction: row; /* Stack icons vertically for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .footer-icons div {
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing between items */
+    }
+}
+
+/* Default styles for size and quantity controls */
+.flex-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: row; /* Display items in a row on smaller screens */
+        
+    }
+}
+
+
+
+
+/* Default styles for containee */
+.containees {
+    display: inline-block;
+    width: calc((100%- 20px) / 3 ); /* Adjust width for 5 items per row */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+/* For screens smaller than 1200px */
+@media only screen and (max-width: 1200px) {
+    .containees {
+        width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
+    }
+}
+
+/* For screens smaller than 992px */
+@media only screen and (max-width: 992px) {
+    .containees {
+        width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
+    }
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .containees{
+        width: calc((100% - 20px)/2); /* Adjust width for 4 items per row */
+    }
+}
+
+/* For screens smaller than 576px */
+@media only screen and (max-width: 576px) {
+    .containees {
+        width: 100%; /* Adjust width for 1 item per row */
+        margin-right: 0; /* Remove right margin for the last item */
+    }
 }
