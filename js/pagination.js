@@ -1,5 +1,5 @@
 // Number of items per page
-const itemsPerPage = 8;
+const itemsPerPage = 24;
 
 // Get all container elements
 const containers = document.querySelectorAll('.container');

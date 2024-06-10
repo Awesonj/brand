@@ -119,17 +119,16 @@ h1, h2 {
 }
 
 .containers {
-    width: calc(100% - 20px); /* Adjust to fit within container */
-    max-width: calc((80% - 20px) / 5); /* Set max-width to ensure responsiveness */
-    height: auto;
+    width: calc((93% - 20px) / 4); /* Adjust to fit within container */
     border: 1px solid black;
-    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
     display: inline-block;
     box-sizing: border-box;
     vertical-align: top;
     text-align: center;
     border-radius: 15px;
+    align-items: center;
 }
 
 .containee {
@@ -356,8 +355,7 @@ nav ul li a.active::after {
     .flex-container {
         flex-wrap: wrap; /* Allow containers to wrap to the next line */
     }
-    .container,
-    .containers{
+    .container{
         width: calc((85% - 15px)/2); /* Adjust width for smaller screens */
         margin-right: 20px; /* Add right margin to create spacing between items */
         margin-bottom: 20px; /* Add bottom margin for spacing between rows */
@@ -369,14 +367,12 @@ nav ul li a.active::after {
     .flex-container {
         flex-wrap: nowrap; /* Prevent containers from wrapping */
     }
-    .container,
-    .containers{
+    .container{
         width: calc((85%  - 20px) / 5); /* Adjust width for larger screens */
         margin-right: 20px; /* Add right margin to create spacing between items */
     }
     /* Adjust margin for the last item in the row */
-    .container:nth-child(5n),
-    .containers:nth-child(5n){
+    .container:nth-child(5n){
         margin-right: 0;
     }
 }
@@ -431,7 +427,7 @@ nav ul li a.active::after {
 
 
 /* Default styles for containee */
-.containees {
+.containee {
     display: inline-block;
     width: calc((100%- 20px) / 3 ); /* Adjust width for 5 items per row */
     margin-right: 20px;
@@ -465,5 +461,30 @@ nav ul li a.active::after {
     .containees {
         width: 100%; /* Adjust width for 1 item per row */
         margin-right: 0; /* Remove right margin for the last item */
+    }
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 1200px) {
+    .flex-container {
+        flex-wrap: wrap; /* Allow containers to wrap to the next line */
+    }
+    .containers{
+        width: calc((90% - 20px)/2); /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+    }
+}
+
+
+/* Adjustments for larger screens */
+@media only screen and (min-width: 762px) {
+    .flex-container {
+        flex-wrap: nowrap; /* Prevent containers from wrapping */
+    }
+    .containers{
+        width: calc((92%  - 20px) / 4); /* Adjust width for larger screens */
+
     }
 }
