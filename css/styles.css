@@ -121,9 +121,9 @@ h2 {
 
 
 .container {
-    width: calc((100% - 100px) / 4); /* Calculate width with padding and margin */
-    height: 360px; /* Adjust the height as needed */
-    margin-right: 20px; /* Space between containers */
+    width: calc((98% - 100px) / 5); /* Calculate width with padding and margin */
+    height: 390px; /* Adjust the height as needed */
+   margin-left: 20px;
     margin-bottom: 20px; /* Space below containers */
     display: inline-block; /* Make containers display inline */
     box-sizing: border-box; /* Include border in width calculation */
@@ -383,21 +383,13 @@ nav ul li a.active::after {
     .flex-container {
         flex-wrap: wrap; /* Allow containers to wrap to the next line */
     }
-    .container{
-        width: calc((85% - 15px)/2); /* Adjust width for smaller screens */
-        margin-right: 20px; /* Add right margin to create spacing between items */
-        margin-bottom: 20px; /* Add bottom margin for spacing between rows */
-    }
+
 }
 
 /* Adjustments for larger screens */
 @media only screen and (min-width: 762px) {
     .flex-container {
         flex-wrap: nowrap; /* Prevent containers from wrapping */
-    }
-    .container{
-        width: calc((85%  - 20px) / 5); /* Adjust width for larger screens */
-        margin-right: 20px; /* Add right margin to create spacing between items */
     }
     /* Adjust margin for the last item in the row */
     .container:nth-child(5n){
@@ -468,6 +460,8 @@ nav ul li a.active::after {
     .containees {
         width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
     }
+
+   
 }
 
 /* For screens smaller than 992px */
@@ -475,7 +469,10 @@ nav ul li a.active::after {
     .containees {
         width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
     }
-   
+
+    .sidebar{
+        display: none;
+    }
 }
 
 /* For screens smaller than 768px */
@@ -483,6 +480,10 @@ nav ul li a.active::after {
     .containees{
         width: calc((100% - 20px)/2); /* Adjust width for 4 items per row */
     }
+    .sidebar{
+        display: none;
+    }
+
 }
 
 /* For screens smaller than 576px */
