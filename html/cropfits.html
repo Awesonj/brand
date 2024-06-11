@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+
+    
+    <nav>
+        <ul>
+        <li><a href="../html/index.html" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="https://www.instagram.com/break_point_fashion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+        <li><a href="#">Whatsapp</a></li>
+        <li><a href="#">Tictok</a></li>
+        </ul>
+    </nav>
+
     <div class="search-container">
         <input type="text" id="staffIdInput" placeholder="Search...">
         <select id="categorySelect">
@@ -851,7 +864,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (28).jpeg" alt="Image">
+                <img src="../images/croptop/1 (28).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -879,7 +892,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (29).jpeg" alt="Image">
+                <img src="../images/croptop/1 (29).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -907,7 +920,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (30).jpeg" alt="Image">
+                <img src="../images/croptop/1 (30).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -935,7 +948,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (31).jpeg" alt="Image">
+                <img src="../images/croptop/1 (31).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -963,7 +976,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (32).jpeg" alt="Image">
+                <img src="../images/croptop/1 (32).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -991,7 +1004,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (33).jpeg" alt="Image">
+                <img src="../images/croptop/1 (33).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -1019,7 +1032,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (34).jpeg" alt="Image">
+                <img src="../images/croptop/1 (34).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -1047,7 +1060,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (35).jpeg" alt="Image">
+                <img src="../images/croptop/1 (35).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -1075,7 +1088,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (36).jpeg" alt="Image">
+                <img src="../images/croptop/1 (36).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -1103,7 +1116,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (37).jpeg" alt="Image">
+                <img src="../images/croptop/1 (37).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -1131,7 +1144,7 @@
 
             <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
-                <img src="../images/croptop/1 (38).jpeg" alt="Image">
+                <img src="../images/croptop/1 (38).jpg" alt="Image">
                 <div class="item-info">
                     <span>Break Point Fashion EST. DRIP T-SHIRT</span><br>
                     <span class="price">7000.00</span>
@@ -1191,6 +1204,21 @@
 
         </div>
     </div>
-    <script src="../js/item.js"></script>
+    <div id="pagination">
+        <button id="prevButton">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <span
+          >Page <span id="currentPage"></span> of
+          <span id="totalPages"></span
+        ></span>
+        <button id="nextButton">
+            <i class="fa-sharp fa-solid fa-forward-step"></i>
+        </button>
+    </div>
+    <script src="../js/item.js" type="module"></script>
+    <script type="module" src="../js/pagination.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js" type="module"></script>
 </body>
 </html>

@@ -5,8 +5,8 @@ body{
     
 }
 #staffIdInput{
-    width: 300px; /* Adjust the width as needed */
-    height: 10px;
+    width: 50%; /* Adjust the width as needed */
+    height: 15px;
     padding: 10px; /* Adjust the padding as needed */
     font-size: 16px; /* Adjust the font size as needed */
     border: 2px solid #000000; /* Add border style */
@@ -31,7 +31,7 @@ body{
 
 #categorySelect {
     width: 100px; /* Adjust the width as needed */
-    height: 34px; /* Adjust the height as needed */
+    height: 39px; /* Adjust the height as needed */
     font-size: 15px; /* Adjust the font size as needed */
     padding: 5px; /* Adjust the padding as needed */
     border: 2px solid #000000; /* Add border style */
@@ -56,28 +56,37 @@ body{
     padding-bottom: 10px;
     position: relative;
     margin-bottom: 20px; /* Added margin bottom to create space for the sidebar */
-}
-.footer-icons {
-    position: absolute;
-    top: 10px; /* Adjust top position */
-    right: 10px; /* Adjust right position */
-    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
+.footer-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 .footer-icons div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-right: 20px; /* Adjust spacing between icons */
+    margin-right: 10px;
 }
 
 .footer-icons .fas {
-    font-size: 24px; /* Adjust the size as needed */
+    margin-top: 27px;
+    font-size: 30px;
 }
 
 .footer-icons span {
-    margin-top: 5px; /* Adjust spacing between icon and text */
+    margin-top: 10px;
+    margin-right: 8px;
+    display: none;
 }
+
 a{
     text-decoration: none;
     color: #000;
@@ -86,8 +95,8 @@ a{
 
 .search-icon-box {
     background-color: #000; /* Black background */
-    width: 30px; /* Adjust width as needed */
-    height: 34px; /* Adjust height to match input/select height */
+    width: 34px; /* Adjust width as needed */
+    height: 39px; /* Adjust height to match input/select height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,4 +317,206 @@ header {
 
 #pagination i {
     font-size: 16px;
+}
+
+
+nav {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8b4513;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8b4513;
+    border-bottom: 2px solid #8b4513;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    background-color: #8b4513;
+}
+
+.logo img {
+    width: 250px;
+    height: 100px;
+    margin-right: 50px;
+    padding-left: 50px;
+    margin-top: 0;
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 1200px) {
+    .flex-container {
+        flex-wrap: wrap; /* Allow containers to wrap to the next line */
+    }
+    .container{
+        width: calc((85% - 15px)/2); /* Adjust width for smaller screens */
+        margin-right: 20px; /* Add right margin to create spacing between items */
+        margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+    }
+}
+
+/* Adjustments for larger screens */
+@media only screen and (min-width: 762px) {
+    .flex-container {
+        flex-wrap: nowrap; /* Prevent containers from wrapping */
+    }
+    .container{
+        width: calc((85%  - 20px) / 5); /* Adjust width for larger screens */
+        margin-right: 20px; /* Add right margin to create spacing between items */
+    }
+    /* Adjust margin for the last item in the row */
+    .container:nth-child(5n){
+        margin-right: 0;
+    }
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 762px) {
+    header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .logo img {
+        width: 120px; /* Adjust logo size for smaller screens */
+        height: 60px; /* Adjust logo size for smaller screens */
+        margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+    }
+
+}
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 762px) {
+    .footer-icons {
+        flex-direction: row; /* Stack icons vertically for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .footer-icons div {
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing between items */
+    }
+}
+
+/* Default styles for size and quantity controls */
+.flex-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: row; /* Display items in a row on smaller screens */
+        
+    }
+}
+
+
+
+
+/* Default styles for containee */
+.containee {
+    display: inline-block;
+    width: calc((100%- 20px) / 3 ); /* Adjust width for 5 items per row */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+/* For screens smaller than 1200px */
+@media only screen and (max-width: 1200px) {
+    .containees {
+        width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
+    }
+}
+
+/* For screens smaller than 992px */
+@media only screen and (max-width: 992px) {
+    .containees {
+        width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
+    }
+   
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .containees{
+        width: calc((100% - 20px)/2); /* Adjust width for 4 items per row */
+    }
+}
+
+/* For screens smaller than 576px */
+@media only screen and (max-width: 576px) {
+    .containees {
+        width: 100%; /* Adjust width for 1 item per row */
+        margin-right: 0; /* Remove right margin for the last item */
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 1200px) {
+    .flex-container {
+        flex-wrap: wrap; /* Allow containers to wrap to the next line */
+    }
+    .containers{
+        width: calc((90% - 20px)/2); /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+    }
+}
+
+
+/* Adjustments for larger screens */
+@media only screen and (min-width: 762px) {
+    .flex-container {
+        flex-wrap: nowrap; /* Prevent containers from wrapping */
+    }
+    .containers{
+        width: calc((92%  - 20px) / 4); /* Adjust width for larger screens */
+
+    }
 }
