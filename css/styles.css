@@ -2,6 +2,7 @@ body{
     padding: top 0;
     padding-left: 20px;
     padding-right: 20px;
+    height: auto;
     
 }
 #staffIdInput{
@@ -129,6 +130,9 @@ h2 {
     border-radius: 15px;
     
 }
+.container span{
+    font-size: 20px;
+}
 
 
 .container img {
@@ -193,6 +197,8 @@ h2 {
    border-right: 0;
    border-bottom: 0;
    box-shadow: 0px 1px 4px rgba(47, 47, 47, 0.837);
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
 }
 
 .container button:hover {
@@ -281,7 +287,7 @@ header {
 .container-wrapper {
     position: relative;
   }
-  #pagination {
+#pagination {
     margin-left: 50%;
     width: 30%;
     display: flex;
@@ -291,6 +297,7 @@ header {
     padding: 10px 0;
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
+    position: absolute;
 }
 
 #pagination button {
@@ -301,6 +308,7 @@ header {
     margin: 0 5px;
     cursor: pointer;
     border-radius: 3px;
+    bottom: 0;
 }
 
 #pagination button:hover {
@@ -386,24 +394,8 @@ nav ul li a.active::after {
         margin-left: 20px;
     }
 
-    #staffIdInput {
-        width: 40%;
-    }
-
-    #searchInput {
-        width: 350px;
-    }
-
-    #categorySelect {
-        width: 120px;
-    }
-
-    #category {
-        width: 400px;
-    }
-
     .container {
-        width: calc((92% - 40px) / 7);
+        max-width: calc((94% - 40px) / 6);
     }
 
     .containees {
@@ -413,6 +405,13 @@ nav ul li a.active::after {
     .sidebar {
    display: none;
     }
+    #pagination{
+        width: 100%;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+         position: absolute;
+     }
 }
 
 /* Adjustments for screens between 992px and 1200px */
@@ -437,7 +436,8 @@ nav ul li a.active::after {
 
 
     .container {
-        width: calc((92% - 30px) / 5);
+        max-width: calc((92% - 30px) / 5);
+        min-width: calc((92% - 20px) / 4);
     }
 
     .containees {
@@ -447,6 +447,14 @@ nav ul li a.active::after {
     .sidebar {
         display: none;
     }
+    #pagination{
+        width: auto;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+
+         position: absolute;
+     }
 }
 
 /* Adjustments for screens between 768px and 991px */
@@ -465,7 +473,8 @@ nav ul li a.active::after {
     }
 
     .container {
-        width: calc((92% - 20px) / 4);
+        max-width: calc((92% - 20px) / 4);
+        min-width: calc((90% - 10px) / 3);
         justify-content: space-between;
     }
 
@@ -476,6 +485,14 @@ nav ul li a.active::after {
     .sidebar {
         display: none;
     }
+    #pagination{
+        width: auto;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+
+         position: absolute;
+     }
 }
 
 /* Adjustments for screens between 576px and 767px */
@@ -484,7 +501,8 @@ nav ul li a.active::after {
 
 
     .container {
-        width: calc((90% - 10px) / 3);
+        max-width: calc((90% - 10px) / 3);
+        min-width: calc((93% - 10px) / 2);
     }
 
     .containees {
@@ -505,6 +523,12 @@ nav ul li a.active::after {
     .search-container{
         width: 90%;
     }
+    #pagination{
+        width: auto;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+     }
 }
 
 /* Adjustments for screens smaller than 576px */
@@ -542,5 +566,7 @@ nav ul li a.active::after {
         margin-right: 0;
         justify-content: center;
         margin-left: 0;
+
+        position: absolute;
     }
 }
