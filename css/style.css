@@ -379,6 +379,9 @@ nav ul li a.active::after {
     }
 
     .container {
+        max-width: calc((93% - 40px) / 7);
+    }
+    .containers {
         max-width: calc((94% - 40px) / 6);
     }
 
@@ -424,6 +427,11 @@ nav ul li a.active::after {
         min-width: calc((92% - 20px) / 4);
     }
 
+    .containers {
+        max-width: calc((92% - 30px) / 5);
+        min-width: calc((92% - 20px) / 4);
+    }
+
     .containees {
         width: calc((96% - 30px) / 3);
     }
@@ -462,6 +470,12 @@ nav ul li a.active::after {
         justify-content: space-between;
     }
 
+    .containers {
+        max-width: calc((92% - 20px) / 4);
+        min-width: calc((90% - 10px) / 3);
+        justify-content: space-between;
+    }
+
     .containees {
         width: calc((96% - 20px) / 2);
     }
@@ -486,6 +500,10 @@ nav ul li a.active::after {
 
     .container {
         max-width: calc((90% - 10px) / 3);
+        min-width: calc((93% - 10px) / 2);
+    }
+    .containers {
+        max-width: calc((100% - 10px) / 3);
         min-width: calc((93% - 10px) / 2);
     }
 
@@ -523,9 +541,15 @@ nav ul li a.active::after {
     }
 
     .container {
+        width: calc((97% - 10px) / 2);
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .containers {
         width: calc((99% - 10px) / 2);
         margin-left: 0;
         margin-bottom: 10px;
+        padding-left: 20px;
     }
 
     .sidebar {

@@ -131,7 +131,7 @@ h2 {
     
 }
 .container span{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
@@ -568,5 +568,8 @@ nav ul li a.active::after {
         margin-left: 0;
 
         position: absolute;
+    }
+    .container span{
+        font-size: 15px;
     }
 }
