@@ -3,6 +3,7 @@ body{
     padding-left: 0;
     padding-right: 0;
     height: auto;
+    margin-left: 0;
     
 }
 #staffIdInput{
@@ -120,7 +121,6 @@ h2 {
 .container {
     width: calc((99%-20px)/7);
     height: 450px; /* Adjust the height as needed */
-   margin-left: 20px;
     margin-bottom: 20px; /* Space below containers */
     display: inline-block; /* Make containers display inline */
     box-sizing: border-box; /* Include border in width calculation */
@@ -475,7 +475,7 @@ nav ul li a.active::after {
     .container {
         max-width: calc((92% - 20px) / 4);
         min-width: calc((90% - 10px) / 3);
-        justify-content: space-between;
+
     }
 
     .containees {
