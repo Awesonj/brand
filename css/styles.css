@@ -475,7 +475,7 @@ nav ul li a.active::after {
     .container {
         max-width: calc((92% - 20px) / 4);
         min-width: calc((90% - 10px) / 3);
-
+        margin-left: 0;
     }
 
     .containees {
@@ -540,7 +540,7 @@ nav ul li a.active::after {
 
     .container {
         width: calc((93% - 20px) / 2);
-        margin-left: 0;
+
         margin-bottom: 10px;
         margin-left: 20px;
     }
