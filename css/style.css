@@ -354,141 +354,192 @@ nav ul li a.active::after {
 
 
 
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 1200px) {
-    .flex-container {
-        flex-wrap: wrap; /* Allow containers to wrap to the next line */
+/* Adjustments for screens larger than 1200px */
+@media only screen and (min-width: 1201px) {
+    body {
+        padding-left: 40px;
+        padding-right: 40px;
     }
-    .container{
-        width: calc((85% - 15px)/2); /* Adjust width for smaller screens */
-        margin-right: 20px; /* Add right margin to create spacing between items */
-        margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+
+    .footer-icons .fas {
+        margin-top: 28px;
+        font-size: 30px;
+        margin-left: 20px;
     }
+
+    .container {
+        max-width: calc((94% - 40px) / 6);
+    }
+
+    .containees {
+        width: calc((96% - 40px) / 3);
+    }
+
+    .sidebar {
+   display: none;
+    }
+    #pagination{
+        width: 100%;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+         position: absolute;
+     }
 }
 
-/* Adjustments for larger screens */
-@media only screen and (min-width: 762px) {
-    .flex-container {
-        flex-wrap: nowrap; /* Prevent containers from wrapping */
+/* Adjustments for screens between 992px and 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .footer-icons .fas {
+        margin-top: 30px;
+        font-size: 30px;
+        margin-left: 20px;
     }
-    .container{
-        width: calc((85%  - 20px) / 5); /* Adjust width for larger screens */
-        margin-right: 20px; /* Add right margin to create spacing between items */
+
+
+    .logo{
+        margin-right: 10px;
+        padding-left: 10px;
     }
-    /* Adjust margin for the last item in the row */
-    .container:nth-child(5n){
-        margin-right: 0;
+
+    .search-container{
+        width: 90%;
+        justify-content: center;
     }
+
+
+    .container {
+        max-width: calc((92% - 30px) / 5);
+        min-width: calc((92% - 20px) / 4);
+    }
+
+    .containees {
+        width: calc((96% - 30px) / 3);
+    }
+
+    .sidebar {
+        display: none;
+    }
+    #pagination{
+        width: auto;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+
+         position: absolute;
+     }
 }
 
-
-
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 762px) {
-    header {
-        padding: 10px; /* Adjust padding for smaller screens */
+/* Adjustments for screens between 768px and 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo{
+        display: none;
+    }
+    .search-container{
+        width: 90%;
     }
 
-    .logo img {
-        width: 120px; /* Adjust logo size for smaller screens */
-        height: 60px; /* Adjust logo size for smaller screens */
-        margin-right: 20px; /* Adjust margin for smaller screens */
+    .footer-icons .fas {
+        margin-top: 15px;
+        font-size: 30px;
+        margin-left: 20px;
     }
 
-    .flex-container {
-        flex-direction: column; /* Stack items vertically for smaller screens */
+    .container {
+        max-width: calc((92% - 20px) / 4);
+        min-width: calc((90% - 10px) / 3);
+        justify-content: space-between;
     }
 
+    .containees {
+        width: calc((96% - 20px) / 2);
+    }
+
+    .sidebar {
+        display: none;
+    }
+    #pagination{
+        width: auto;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+
+         position: absolute;
+     }
 }
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 762px) {
-    .footer-icons {
-        flex-direction: row; /* Stack icons vertically for smaller screens */
-        margin-top: 10px; /* Adjust margin for smaller screens */
+
+/* Adjustments for screens between 576px and 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+
+    .container {
+        max-width: calc((90% - 10px) / 3);
+        min-width: calc((93% - 10px) / 2);
     }
 
-    .footer-icons div {
-        margin-right: 0; /* Remove right margin for smaller screens */
-        margin-bottom: 10px; /* Add bottom margin for spacing between items */
+    .containees {
+        width: calc((96% - 10px) / 2);
     }
-}
-
-/* Default styles for size and quantity controls */
-.flex-container {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */
-}
-
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-    .flex-container {
-        flex-direction: row; /* Display items in a row on smaller screens */
+  .footer-icons .fas {
+        margin-top: 12px;
+        font-size: 30px;
+        margin-left: 20px;
         
     }
+    .sidebar {
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .search-container{
+        width: 90%;
+    }
+    #pagination{
+        width: auto;
+         margin-right: 0;
+         justify-content: center;
+         margin-left: 0;
+     }
 }
 
-
-
-
-/* Default styles for containee */
-.containee {
-    display: inline-block;
-    width: calc((100%- 20px) / 3 ); /* Adjust width for 5 items per row */
-    margin-right: 20px;
-    margin-bottom: 20px;
-    vertical-align: top;
-}
-
-/* For screens smaller than 1200px */
-@media only screen and (max-width: 1200px) {
-    .containees {
-        width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
+/* Adjustments for screens smaller than 576px */
+@media only screen and (max-width: 575px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
     }
-}
 
-/* For screens smaller than 992px */
-@media only screen and (max-width: 992px) {
-    .containees {
-        width: calc((100% - 20px)/3); /* Adjust width for 4 items per row */
+    .container {
+        width: calc((99% - 10px) / 2);
+        margin-left: 0;
+        margin-bottom: 10px;
     }
-}
 
-/* For screens smaller than 768px */
-@media only screen and (max-width: 768px) {
-    .containees{
-        width: calc((100% - 20px)/2); /* Adjust width for 4 items per row */
+    .sidebar {
+        display: none;
     }
-}
-
-/* For screens smaller than 576px */
-@media only screen and (max-width: 576px) {
-    .containees {
-        width: 100%; /* Adjust width for 1 item per row */
-        margin-right: 0; /* Remove right margin for the last item */
+    .footer-icons{
+        flex-direction: column;
+        margin-top: 0;
+        display: flex;
+        margin-bottom: 0;
+        padding-top: 50px;
     }
-}
-
-
-
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 1200px) {
-    .flex-container {
-        flex-wrap: wrap; /* Allow containers to wrap to the next line */
+    .logo{
+        display: none;
     }
-    .containers{
-        width: calc((90% - 20px)/2); /* Adjust width for smaller screens */
-        margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+    .footer-icons .fas {
+        margin-top: 10px;
+        font-size: 25px;
     }
-}
+    #pagination{
+       width: auto;
+        margin-right: 0;
+        justify-content: center;
+        margin-left: 0;
 
-
-/* Adjustments for larger screens */
-@media only screen and (min-width: 762px) {
-    .flex-container {
-        flex-wrap: nowrap; /* Prevent containers from wrapping */
-    }
-    .containers{
-        width: calc((92%  - 20px) / 4); /* Adjust width for larger screens */
-
+        position: absolute;
     }
 }
