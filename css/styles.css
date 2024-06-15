@@ -1,7 +1,7 @@
 body{
     padding: top 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 0;
     height: auto;
     
 }
@@ -395,7 +395,7 @@ nav ul li a.active::after {
     }
 
     .container {
-        max-width: calc((94% - 40px) / 6);
+        max-width: calc((89% - 20px) / 6);
     }
 
     .containees {
@@ -436,7 +436,7 @@ nav ul li a.active::after {
 
 
     .container {
-        max-width: calc((92% - 30px) / 5);
+        max-width: calc((96% - 20px) / 5);
         min-width: calc((92% - 20px) / 4);
     }
 
