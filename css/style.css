@@ -544,6 +544,7 @@ nav ul li a.active::after {
         width: calc((97% - 10px) / 2);
         margin-left: 0;
         margin-bottom: 10px;
+        margin-left: 20px;
     }
     .containers {
         width: calc((99% - 10px) / 2);

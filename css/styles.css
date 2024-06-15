@@ -539,9 +539,10 @@ nav ul li a.active::after {
     }
 
     .container {
-        width: calc((99% - 10px) / 2);
+        width: calc((91% - 10px) / 2);
         margin-left: 0;
         margin-bottom: 10px;
+        margin-left: 20px;
     }
 
     .sidebar {
