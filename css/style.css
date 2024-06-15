@@ -116,6 +116,7 @@ h1, h2 {
 
 
 .container {
+    margin-right: 20px;
     width: calc((99%-20px)/7);
     height: 450px; /* Adjust the height as needed */
     margin-bottom: 20px; /* Space below containers */
@@ -212,50 +213,48 @@ h1, h2 {
     font-weight: bold;
     margin-top: 5px;
 }
-
 .item-info {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Add margin between item name and price */
 }
+
 
 .item-info select {
     margin-left: 5px;
-    font-size: 16px;
-    padding: 8px;
-    margin-bottom: 1px;
-    margin-right: 1px;
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 6px; /* Adjust the padding as needed */
+    margin-bottom: 0px;
 }
 
 .item-info input[type="text"] {
-    padding: 5px;
-    width: 22px;
-    height: 22px;
-    border: 2px solid black;
+    padding: 5px; /* Add padding for better appearance */   
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(88, 82, 82); /* Add border */
     border-right: 0;
     border-left: 0;
-    text-align: center;
-    -moz-appearance: textfield;
-    appearance: textfield;
+    text-align: center; /* Center the text inside the input */
+    -moz-appearance: textfield; /* Remove the up and down arrows in Firefox */
+    appearance: textfield; /* Remove the up and down arrows in other browsers */
 }
 
 .quantity-container {
-    display: flex;
-    align-items: center;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    margin-left: 8px;
 }
 
 .quantity-controls {
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
+    display: flex; /* Use flexbox for the controls */
+    align-items: center; /* Align items vertically */
+
 }
 
 .quantity-controls i {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 0px; /* Adjust the margin to bring icons closer */
     cursor: pointer;
-    border: 2px solid black;
-    padding: 8px;
+    border: 1px solid rgb(88, 82, 82); /* Add border */
+    padding: 7px; /* Add padding for better appearance */
 }
-
 .logo img {
     width: 250px;
     height: 100px;
@@ -540,6 +539,7 @@ nav ul li a.active::after {
 
     .container {
         width: calc((93% - 20px) / 2);
+        margin-right: 0;
         margin-left: 0;
         margin-bottom: 10px;
         margin-left: 20px;
