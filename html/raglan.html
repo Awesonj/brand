@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,25 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
 
-    
+
     <nav>
         <ul>
-        <li><a href="../index.html" class="active">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="https://www.instagram.com/break_point_fashion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
-        <li><a href="#">Whatsapp</a></li>
-        <li><a href="#">Tictok</a></li>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a
+                    href="https://www.instagram.com/break_point_fashion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+            </li>
+            <li><a href="#">Whatsapp</a></li>
+            <li><a href="#">Tictok</a></li>
         </ul>
     </nav>
 
     <header>
-        
+
         <div class="logo">
             <img src="../images/logo.png" alt="logo">
         </div>
@@ -35,7 +39,7 @@
             </select>
             <!-- Replace the button with the search icon -->
             <div class="search-icon-box">
-                 <i id="fetchDetailsButton" class="fas fa-search"></i>
+                <i id="fetchDetailsButton" class="fas fa-search"></i>
             </div>
         </div>
         <div class="footer-icons">
@@ -70,13 +74,13 @@
                 <div class="search-icon-box">
                     <i id="fetchDetailsButton" class="fas fa-search"></i>
                 </div>
-        </div>
-        <h2>Recently Viewed Products</h2>
+            </div>
+            <h2>Recently Viewed Products</h2>
 
         </div>
         <div class="t-shirts">
 
-             <div class="container">
+            <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
                 <img src="../images/raglan/1 (1).jpeg" alt="Image">
                 <div class="item-info">
@@ -104,7 +108,7 @@
                 </div>
             </div>
 
-          <div class="container">
+            <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
                 <img src="../images/raglan/1 (2).jpeg" alt="Image">
                 <div class="item-info">
@@ -132,7 +136,7 @@
                 </div>
             </div>
 
-             <div class="container">
+            <div class="container">
                 <!-- Replace "image.jpg" with the path to your image -->
                 <img src="../images/raglan/1 (3).jpeg" alt="Image">
                 <div class="item-info">
@@ -328,28 +332,27 @@
                 </div>
             </div>
 
-            
-        
-        
-        
+
+
+
+
         </div>
     </div>
     <div id="pagination">
         <button id="prevButton">
-          <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-backward-step"></i>
         </button>
-        <span
-          >Page <span id="currentPage"></span> of
-          <span id="totalPages"></span
-        ></span>
+        <span>Page <span id="currentPage"></span> of
+            <span id="totalPages"></span></span>
         <button id="nextButton">
             <i class="fa-sharp fa-solid fa-forward-step"></i>
         </button>
     </div>
 
-      <script src="../js/item.js" type="module"></script>
+    <script src="../js/item.js" type="module"></script>
     <script type="module" src="../js/pagination.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js" type="module"></script>
     <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js" type="module"></script>
 </body>
+
 </html>
